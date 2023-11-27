@@ -11,10 +11,14 @@ environment:
     packages:
       - wolfi-base
       - busybox
+      - bzip2-dev
       - ca-certificates-bundle
       - build-base
       - python3
       - python3-dev
+      - xz-dev
+      - zlib-dev
+      - zstd-dev
 
 data:
   - name: libs
