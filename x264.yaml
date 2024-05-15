@@ -2,7 +2,7 @@
 package:
   name: x264
   # When bumping this, also bump the URL in the fetch step below. The version scheme is complicated here so we can't use our normal tooling.
-  version: 0_git20191217
+  version: 0_stable31e19f92
   epoch: 1
   description: Free library for encoding H264/AVC video streams
   copyright:
@@ -26,8 +26,8 @@ pipeline:
   - uses: fetch
     with:
       repo: https://code.videolan.org/videolan/x264.git
-      expected-sha256: b2495c8f2930167d470994b1ce02b0f4bfb24b3317ba36ba7f112e9809264160
-      uri: https://download.videolan.org/pub/videolan/x264/snapshots/x264-snapshot-20191217-2245-stable.tar.bz2
+      expected-sha256: 01a4acb74eea1118c3aa96c3e18ee3384bc1f2bc670f31fb0f63be853e4d9d08
+      uri: https://code.videolan.org/videolan/x264/-/archive/31e19f92f00c7003fa115047ce50978bc98c3a0d/x264-31e19f92f00c7003fa115047ce50978bc98c3a0d.tar.bz2
 
   - runs: |
       ./configure \
